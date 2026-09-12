@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="House Rules. A politely rigged game of tic-tac-toe by Brobbey Messiah."
+    />
+    <title>House Rules — Brobbey Messiah</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a
+        class="signature"
+        href="https://brobbey-messiah-portfolio.brobbeymessiah5.chatgpt.site"
+        aria-label="Brobbey Messiah portfolio"
+        >brobbey messiah<span style="color: var(--blue)">.</span></a
+      >
+      <nav class="nav" aria-label="Navigation">
+        <a
+          href="https://brobbey-messiah-portfolio.brobbeymessiah5.chatgpt.site"
+          aria-label="Back to portfolio"
+          title="Back to portfolio"
+          >↖</a
+        ><a
+          class="active"
+          href="#game"
+          aria-label="House Rules game"
+          title="House Rules"
+          >⌗</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div class="eyebrow">
+        <span class="dot"></span>Off the clock / interaction experiment 02
+      </div>
+      <h1>A quick game?<br /><span>A fair one? Maybe.</span></h1>
+      <div class="intro">
+        <p class="description">
+          You’re X. The house is O.<br />Three in a row. A few small liberties
+          with the rules.
+        </p>
+        <div class="fair">perfectly fair. probably.</div>
+      </div>
+      <section
+        id="game"
+        class="game-layout"
+        aria-label="House Rules tic-tac-toe"
+      >
+        <div class="board-wrap">
+          <div
+            id="board"
+            class="board"
+            role="group"
+            aria-label="Tic-tac-toe board"
+          ></div>
+          <div id="toast" class="toast" aria-hidden="true">
+            A small administrative adjustment.
+          </div>
+          <div class="board-note">
+            <div class="legend">
+              <span><b>×</b> You</span
+              ><span><b class="blue">○</b> The house</span>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div aria-live="polite" aria-atomic="true">
+          
+            <h2 class="status-title" id="title">Go on. You’ve got this.</h2>
+            <p id="copy" class="status-copy">
+              Pick a square. The house is definitely<br />not planning anything.
+            </p>
+          </div>
+          <div class="score" aria-label="Session score">
+            <div><small>YOU</small><strong>0</strong></div>
+            <div>
+              <small>THE HOUSE</small
+              ><strong id="house-score" class="house-score">0</strong>
+            </div>
+          </div>
+          <p class="score-caption">Score verified by the house. Naturally.</p>
+          <button class="replay" id="replay">
+            Start a rigged game <span aria-hidden="true">↗</span>
+          </button>
+        </aside>
+      </section>
+      <section class="incidents" aria-label="Incident report">
+        <div class="incident-heading">
+          <div class="eyebrow">The incident report</div>
+          <span id="incident-count">0 violations</span>
+        </div>
+        <ol id="incident-log">
+          <li>Nothing to report. Suspiciously quiet.</li>
+        </ol>
+        <button id="appeal" class="appeal">File an appeal ↗</button>
+      </section>
+      <div class="rules">
+        <span class="eyebrow">The fine print</span>
+        <p>
+          The house may relocate, replace, or politely disregard your moves.<br />By
+          playing, you agree that this is all very reasonable.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <span>Made with care & a little mischief.</span
+      >
+    </footer>
+    <script src="engine.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
